@@ -15,17 +15,17 @@ defmodule HWFacts.Disk.BlockDevice do
 
   @type t :: %__MODULE__{
     name: binary,
-    fs_type: binary,
-    uuid: binary,
-    mount_point: binary,
+    fs_type: binary | nil,
+    uuid: binary | nil,
+    mount_point: binary | nil,
     is_formatted: boolean
   }
 
   defstruct [
     name: "",
-    fs_type: "",
-    uuid: "",
-    mount_point: "",
+    fs_type: nil,
+    uuid: nil,
+    mount_point: nil,
     is_formatted: false
   ]
 end
